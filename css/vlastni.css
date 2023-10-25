@@ -1,0 +1,138 @@
+body{
+    padding-top:0px;
+}
+.logo{
+    height: 50px;
+}
+.panel-body{
+    padding:0px;
+    padding-top:2px;
+    position: relative;
+}
+.flip-container {
+    perspective: 1000;
+    transform-style: preserve-3d;
+}
+.flip-container:hover .back {
+    transform: rotateY(0deg);
+}
+.flip-container:hover .front {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 100%;
+    height: 100%;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(-180deg);
+    position: absolute;
+    top:0;
+}
+
+.vertical .back {
+    transform: rotateX(180deg);
+}
+
+.vertical.flip-container:hover .back {
+    transform: rotateX(0deg);
+}
+
+.vertical.flip-container:hover .front {
+    transform: rotateX(180deg);
+}
+
+.jumbotron {
+    position: relative;
+}
+.domu {
+    background: #000 url("../img/uvod_huge.jpg") center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+.ironman {
+    background: #000 url("../img/ironman_huge.jpg") center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hulk {
+    background: #000 url("../img/hulk_huge.jpg") center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.kapitan {
+    background: #000 url("../img/kapitan_huge.jpg") center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.thor {
+    background: #000 url("../img/thor_huge.jpg") center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.avg {
+    background: #000 url("../img/avengers_huge.jpg") center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.anti {
+    background: #000 url("../img/anti_huge.jpg") center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.navbar{
+    margin: auto;
+}
+
+.hlava{
+    height: 300px;
+}
+
+.nahled{
+    width: 100%;
+}
